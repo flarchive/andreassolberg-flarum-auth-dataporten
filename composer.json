@@ -1,0 +1,36 @@
+{
+    "name": "andreassolberg/flarum-auth-dataporten",
+    "description": "Allow users to log in using Dataporten.no",
+    "type": "flarum-extension",
+    "keywords": ["authentication"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Andreas Åkre Solberg",
+            "email": "andreas.solberg@uninett.no"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/andreassolberg/flarum-ext-auth-dataporten/issues",
+        "source": "https://github.com/andreassolberg/flarum-ext-auth-dataporten"
+    },
+    "require": {
+        "flarum/core": "^0.1.0-beta.3",
+        "league/oauth2-client": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Flarum\\Auth\\Dataporten\\": "src/"
+        }
+    },
+    "extra": {
+        "flarum-extension": {
+            "title": "Dataporten Login",
+            "icon": {
+                "name": "dataporten",
+                "backgroundColor": "#eeebe8",
+                "color": "#336"
+            }
+        }
+    }
+}
